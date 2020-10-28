@@ -1,6 +1,6 @@
 API para categorias e comentários do teste proposto.
 
-Após rodar npm install ou yarn e o comando para iniciar a API, ela rodará uma função para instanciar comentários, categorias e usuários baseados no modelo. As seeds podem ser conferidas na função preloadSeeds() no arquivo src/app.ts.
+Ao rodar yarn e yarn watch os arquivos da dist serão criados, então a API rodará uma função para instanciar comentários, categorias e usuários baseados no modelo. As seeds podem ser conferidas na função preloadSeeds() no arquivo src/app.ts.
 
 Como não há um banco de dados, as tabelas foram instanciadas como classes de dicionários de dados baseados em interfaces. Os dados manipulados persistem enquanto a API estiver rodando.
 
