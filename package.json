@@ -1,13 +1,13 @@
 {
-  "name": "clean-api",
+  "name": "categorias_comentarios_api",
   "version": "0.0.2",
   "description": "",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node src/index.js",
     "build": "tsc",
     "watch-ts": "tsc -w",
-    "watch-node": "nodemon dist/index.js",
+    "watch-node": "nodemon src/index.js",
     "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript, Node\" -c \"yello.bold, cyan.bold\" \"yarn run watch-ts\" \"yarn run watch-node\"",
     "test": "mocha -r ts-node/register src/**/*.spec.ts",
     "lint": "tslint --fix --project tsconfig.json"
