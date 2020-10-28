@@ -2,12 +2,12 @@
   "name": "categorias_comentarios_api",
   "version": "0.0.2",
   "description": "",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "node src/index.ts",
+    "start": "node dist/index.js",
     "build": "tsc",
     "watch-ts": "tsc -w",
-    "watch-node": "nodemon src/index.ts",
+    "watch-node": "nodemon dist/index.js",
     "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript, Node\" -c \"yello.bold, cyan.bold\" \"yarn run watch-ts\" \"yarn run watch-node\"",
     "test": "mocha -r ts-node/register src/**/*.spec.ts",
     "lint": "tslint --fix --project tsconfig.json"
